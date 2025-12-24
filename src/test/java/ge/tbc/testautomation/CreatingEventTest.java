@@ -30,7 +30,7 @@ public class CreatingEventTest {
                                 "profile.password_manager_enabled", false
                         )
                 );
-//        options.addArguments("--headless=new");
+        options.addArguments("--headless=new");
         driver = new ChromeDriver(options);
         driver.manage().window().maximize();
 //        driver.get("http://34.52.231.181:4200/auth/login");
@@ -138,13 +138,12 @@ public class CreatingEventTest {
         publishButton.click();
 
         //expected result - Event is created and appears in the event list
-//        WebElement searchBar = driver.findElement(By.xpath(""));
+//        WebElement searchBar = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("input[placeholder^='Search']")));
 //        searchBar.sendKeys(Constants.EVENT_TITLE);
 //
 //        WebElement foundNewEvent =driver.findElement(By.xpath(""));
 //        Assert.assertEquals(foundNewEvent.getText(),Constants.EVENT_TITLE);
     }
-
     @AfterClass
     public void tearDown(){
         driver.quit();
