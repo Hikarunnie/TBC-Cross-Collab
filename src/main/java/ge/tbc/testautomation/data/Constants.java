@@ -1,7 +1,10 @@
 package ge.tbc.testautomation.data;
 public class Constants {
-    public static final String HOME_PAGE_URL = "http://localhost:4201/home";
-    public static final String EVENT_MGMT_PAGE_URL ="http://localhost:4201/event-management/list";
+    public static final String HOME_PAGE_URL = "http://34.52.231.181:4201/home";
+    public static final String EVENT_MGMT_PAGE_URL ="http://34.52.231.181:4201/event-management/list";
+
+//    public static final String HOME_PAGE_URL = "http://34.52.231.181:4200/home";
+//    public static final String EVENT_MGMT_PAGE_URL ="http://34.52.231.181:4200/event-management/list";
     public static final String EVENT_FORM_HEADER = "Create New Event";
     public static final String EVENT_TITLE ="Cross-Collaboration Project: Demo Day";
     public static final String EVENT_DESCRIPTION ="Frontend, Backend, Test Automation, DevOps, Android, iOS მიმართულებების Cross-Collaboration პროექტის დასკვნით ღონისძიება ";
