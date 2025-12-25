@@ -108,6 +108,7 @@ public class RegisteringForEventTest {
        //expected result
        WebElement cancelButton = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("button.cancel-btn")));
        Assert.assertEquals(Constants.ALREADY_REGISTERED_TXT,cancelButton.getText());
+       cancelButton.click(); // adding this so testing multiple times is possible(changing back to registerButton)
     }
 
     @AfterClass
