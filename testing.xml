@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="Event Management Tests" thread-count="1">
+<suite name="Event Management Tests" thread-count="2">
     <test name="Event Creation Tests">
         <classes>
-            <class name="ge.tbc.testautomation.CreatingEventTest">
-            </class>
+            <!-- Publishing Event Test -->
+            <class name="ge.tbc.testautomation.CreatingEventTest"> </class>
+            <class name="ge.tbc.testautomation.RegisteringForEventTest"> </class>
         </classes>
     </test>
 </suite>

@@ -30,21 +30,20 @@ public class CreatingEventTest {
                                 "profile.password_manager_enabled", false
                         )
                 );
-        options.addArguments("--headless=new");
+        options.addArguments("--headless", "--disable-gpu", "--no-sandbox");
         driver = new ChromeDriver(options);
         driver.manage().window().maximize();
-//        driver.get("http://34.52.231.181:4200/auth/login");
-        driver.get("http://34.52.231.181:4201/auth/login");
+        driver.get("http://34.52.231.181:4200/auth/login");
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
     @Test(description = "sign in", priority = 1)
     public void signingIn(){
         // test data - filling form
         WebElement emailField = wait.until(ExpectedConditions.elementToBeClickable(By.id("email")));
-        emailField.sendKeys("admin@company.com");
+        emailField.sendKeys(Constants.ADMIN_EMAIL);
 
         WebElement passwordField = driver.findElement(By.xpath("//input[@placeholder='Enter password']"));
-        passwordField.sendKeys("mimimimi");
+        passwordField.sendKeys(Constants.ADMIN_PASSWORD);
 
         WebElement signInButton = driver.findElement(By.xpath("//p-button[@label ='Sign In']//parent::button"));
         signInButton.click();
@@ -136,15 +135,9 @@ public class CreatingEventTest {
         WebElement publishButton = driver.findElement(By.xpath("//button[@label ='Publish Event']"));
         publishButton.click();
 
-        //expected result - Event is created and appears in the event list
-//        WebElement searchBar = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("input[placeholder^='Search']")));
-//        searchBar.sendKeys(Constants.EVENT_TITLE);
-//
-//        WebElement foundNewEvent =driver.findElement(By.xpath(""));
-//        Assert.assertEquals(foundNewEvent.getText(),Constants.EVENT_TITLE);
     }
-//    @AfterClass
-//    public void tearDown(){
-//        driver.quit();
-//    }
+    @AfterClass
+    public void tearDown(){
+        driver.quit();
+    }
 }
