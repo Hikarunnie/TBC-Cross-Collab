@@ -1,8 +1,5 @@
 package ge.tbc.testautomation.data;
 public class Constants {
-//    public static final String HOME_PAGE_URL = "http://34.52.231.181:4201/home";
-//    public static final String EVENT_MGMT_PAGE_URL ="http://34.52.231.181:4201/event-management/list";
-
     public static final String ADMIN_EMAIL ="admin@company.com";
     public static final String ADMIN_PASSWORD ="mimimimi";
     public static final String HOME_PAGE_URL = "http://34.52.231.181:4201/home";
@@ -27,6 +24,6 @@ public class Constants {
     public static final String USER_PASSWORD ="Testing4";
     public static final String BROWSE_EVENT_URL ="http://34.52.231.181:4201/events";
     public static final String EVENT_NAME = "Mindfulness & Productivity Workshop";
-    public static final String FOUND_EVENT_URL ="http://34.52.231.181:4201/events/54";
+    public static final String FOUND_EVENT_URL ="http://34.52.231.181:4201/events/113";
     public static final String ALREADY_REGISTERED_TXT ="Cancel Registration";
 }
