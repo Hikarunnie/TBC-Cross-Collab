@@ -16,6 +16,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.NoSuchElementException;
 
+@Test(description = "publishing new event (TEAM11-T4)")
 public class CreatingEventTest {
     WebDriver driver;
     WebDriverWait wait;

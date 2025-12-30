@@ -13,7 +13,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import java.time.Duration;
 import java.util.Map;
-
+@Test(description = "registering for an event (TEAM11-T6)")
 public class RegisteringForEventTest {
         WebDriver driver;
         WebDriverWait wait;
