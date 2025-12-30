@@ -28,7 +28,7 @@ public class RegisteringForEventTest {
                                     "profile.password_manager_enabled", false
                             )
                     );
-//            options.addArguments("--headless", "--disable-gpu", "--no-sandbox");
+         options.addArguments("--headless", "--disable-gpu", "--no-sandbox");
             driver = new ChromeDriver(options);
             driver.manage().window().maximize();
             driver.get("http://34.52.231.181:4200/auth/login");
