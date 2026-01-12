@@ -35,12 +35,6 @@ These tests verify the admin functionalities related to event creation and publi
 ### Prerequisites
 1. **Java 8 or higher** should be installed.
 2. **Maven** for dependency management.
-3. **Selenium WebDriver** and **TestNG** dependencies in `pom.xml`.
-4. **ChromeDriver** installed and configured for headless mode.
-
-### Prerequisites
-1. **Java 8 or higher** should be installed.
-2. **Maven** for dependency management.
 3. The **`pom.xml`** file already includes all necessary dependencies for **Selenium WebDriver** and **TestNG**.
 4. **ChromeDriver**: The tests are configured to run in headless mode by default.
 
@@ -48,6 +42,6 @@ These tests verify the admin functionalities related to event creation and publi
 1. Clone the repository.
 - git clone https://github.com/Hikarunnie/TBC-Cross-Collab.git
 - cd TBC-Cross-Collab
-3. Open the project in your IDE (IntelliJ, Eclipse, etc.).
-4. Install Dependencies
-5. Run Tests Using testing.xml file
+2. Open the project in your IDE (IntelliJ, Eclipse, etc.).
+3. Install Dependencies
+4. Run Tests Using testing.xml file
