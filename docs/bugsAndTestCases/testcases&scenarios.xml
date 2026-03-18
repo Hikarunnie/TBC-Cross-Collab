@@ -1,0 +1,993 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<project>
+    <projectId>10028</projectId>
+    <projectKey>TEAM11</projectKey>
+    <exportDate>2025-12-30 21:57:53 UTC</exportDate>
+    <folders>
+        <folder fullPath="Scenarios" index="1"/>
+        <folder fullPath="Unit-integration_tests" index="2"/>
+    </folders>
+    <testCases>
+        <testCase id="287792316" key="TEAM11-T1">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Ani Kharabadze</createdBy>
+            <createdOn>2025-12-22 12:20:29 UTC</createdOn>
+            <customFields>
+                <customField name="Test Case Category" type="SINGLE_CHOICE_SELECT_LIST">
+                    <value><![CDATA[Unit Test]]></value>
+                </customField>
+            </customFields>
+            <folder><![CDATA[Unit-integration_tests]]></folder>
+            <issues>
+                <issue>
+                    <key>TEAM11-36</key>
+                    <summary><![CDATA[Authorization/Authentification]]></summary>
+                </issue>
+                <issue>
+                    <key>TEAM11-89</key>
+                    <summary><![CDATA[Sign In (Login)]]></summary>
+                </issue>
+            </issues>
+            <labels/>
+            <name><![CDATA[Sign-in with valid credentials]]></name>
+            <objective><![CDATA[User can Sign in with correct email and password]]></objective>
+            <owner>712020:bce9f31c-2438-4b8b-9363-2492716c4021</owner>
+            <precondition><![CDATA[User account exists in the system]]></precondition>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Approved]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[Entering Valid Information]]></description>
+                        <expectedResult><![CDATA[Inputs accepted without error]]></expectedResult>
+                        <testData><![CDATA[Email: Giorgi@gmail.com<br data-pasted="true">Password: paroli123]]></testData>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[signing in&nbsp;]]></description>
+                        <expectedResult><![CDATA[redirected to home page]]></expectedResult>
+                        <testData><![CDATA[Sign in button]]></testData>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+        <testCase id="287792685" key="TEAM11-T2">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Ani Kharabadze</createdBy>
+            <createdOn>2025-12-22 12:26:32 UTC</createdOn>
+            <customFields>
+                <customField name="Test Case Category" type="SINGLE_CHOICE_SELECT_LIST">
+                    <value><![CDATA[Unit Test]]></value>
+                </customField>
+            </customFields>
+            <folder><![CDATA[Unit-integration_tests]]></folder>
+            <issues>
+                <issue>
+                    <key>TEAM11-36</key>
+                    <summary><![CDATA[Authorization/Authentification]]></summary>
+                </issue>
+                <issue>
+                    <key>TEAM11-89</key>
+                    <summary><![CDATA[Sign In (Login)]]></summary>
+                </issue>
+            </issues>
+            <labels/>
+            <name><![CDATA[Sign-in with invalid mail]]></name>
+            <objective><![CDATA[User can't Sign in with incorrect email and password]]></objective>
+            <owner>712020:bce9f31c-2438-4b8b-9363-2492716c4021</owner>
+            <precondition><![CDATA[User account exists in the system]]></precondition>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Approved]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[Entering invalid Information]]></description>
+                        <expectedResult><![CDATA[&nbsp;"Invalid email format" message is shown<br>sign in button is inactive]]></expectedResult>
+                        <testData><![CDATA[Email: Giorgigmail.com<br data-pasted="true">Password: paroli123]]></testData>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+        <testCase id="287794975" key="TEAM11-T3">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Ani Kharabadze</createdBy>
+            <createdOn>2025-12-22 12:31:25 UTC</createdOn>
+            <customFields>
+                <customField name="Test Case Category" type="SINGLE_CHOICE_SELECT_LIST">
+                    <value><![CDATA[Unit Test]]></value>
+                </customField>
+            </customFields>
+            <folder><![CDATA[Unit-integration_tests]]></folder>
+            <issues>
+                <issue>
+                    <key>TEAM11-36</key>
+                    <summary><![CDATA[Authorization/Authentification]]></summary>
+                </issue>
+                <issue>
+                    <key>TEAM11-89</key>
+                    <summary><![CDATA[Sign In (Login)]]></summary>
+                </issue>
+            </issues>
+            <labels/>
+            <name><![CDATA[Sign in with empty fields]]></name>
+            <objective><![CDATA[error message saying email and password fields are required appear]]></objective>
+            <owner>712020:bce9f31c-2438-4b8b-9363-2492716c4021</owner>
+            <precondition><![CDATA[user account exists]]></precondition>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Approved]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[]]></description>
+                        <expectedResult><![CDATA[]]></expectedResult>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+        <testCase id="287970710" key="TEAM11-T4">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Ani Kharabadze</createdBy>
+            <createdOn>2025-12-23 13:31:27 UTC</createdOn>
+            <customFields>
+                <customField name="Test Case Category" type="SINGLE_CHOICE_SELECT_LIST">
+                    <value><![CDATA[Scenario]]></value>
+                </customField>
+            </customFields>
+            <folder><![CDATA[Scenarios]]></folder>
+            <issues>
+                <issue>
+                    <key>TEAM11-29</key>
+                    <summary><![CDATA[Create & manage Events (Admin)]]></summary>
+                </issue>
+                <issue>
+                    <key>TEAM11-90</key>
+                    <summary><![CDATA[Create Event By Admin]]></summary>
+                </issue>
+            </issues>
+            <labels/>
+            <name><![CDATA[publishing new event]]></name>
+            <objective><![CDATA[Event is created and appears in the event list]]></objective>
+            <owner>712020:bce9f31c-2438-4b8b-9363-2492716c4021</owner>
+            <precondition><![CDATA[user must have an Admin role and must be on event management page<br><br>]]></precondition>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Scenario Automated]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[sign in&nbsp;]]></description>
+                        <expectedResult><![CDATA[user is signed in&nbsp;<br data-pasted="true">Home page is displayed]]></expectedResult>
+                        <testData><![CDATA[<span style="color: rgb(64, 64, 64); font-family: Inter, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;" data-pasted="true">Email: <span data-teams="true" data-pasted="true"><a href="mailto:admin@company.com" rel="noreferrer noopener" target="_blank" title="mailto:admin@company.com">admin@company.com</a></span></span><br><span data-pasted="true">Password: mimimimi</span><br><span data-pasted="true">sign in Button</span>]]></testData>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[navigating to event management page]]></description>
+                        <expectedResult><![CDATA[management page opens]]></expectedResult>
+                        <testData><![CDATA[Event Management Item]]></testData>
+                    </step>
+                    <step index="2">
+                        <customFields/>
+                        <description><![CDATA[creating new event]]></description>
+                        <expectedResult><![CDATA[new event creation form is displayed]]></expectedResult>
+                        <testData><![CDATA[Create New Event button]]></testData>
+                    </step>
+                    <step index="3">
+                        <customFields/>
+                        <description><![CDATA[entering event details]]></description>
+                        <expectedResult><![CDATA[no warning is shown]]></expectedResult>
+                        <testData><![CDATA[Event Title:"Cross-Collaboration Project: Demo Day"<br>Category: "Social"<br>Event Description: "Frontend, Backend, Test Automation, DevOps, Android, iOS მიმართულებების Cross-Collaboration პროექტის დასკვნით ღონისძიება"<br>Start Date: "12/26/2025"<br>End Date: "12/26/2025"<br>Start Time: "17:00"<br>End Time: "19:00"<br>Venue Name: "TBC CONCEPT SPACE"<br>City: "Tbilisi"<br>Address: "მარჯანიშვილის ქუჩა 7"<br>Room Number: "444"<br>Floor: "IV სართული"<br>Max Capacity: "404"<br>Min Participants: "4"]]></testData>
+                    </step>
+                    <step index="4">
+                        <customFields/>
+                        <description><![CDATA[publishing event]]></description>
+                        <expectedResult><![CDATA[Event is created and appears in the event list]]></expectedResult>
+                        <testData><![CDATA[publish event button]]></testData>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+        <testCase id="287973681" key="TEAM11-T5">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Ani Kharabadze</createdBy>
+            <createdOn>2025-12-23 14:05:58 UTC</createdOn>
+            <customFields>
+                <customField name="Test Case Category" type="SINGLE_CHOICE_SELECT_LIST">
+                    <value><![CDATA[Scenario]]></value>
+                </customField>
+            </customFields>
+            <folder><![CDATA[Scenarios]]></folder>
+            <issues>
+                <issue>
+                    <key>TEAM11-29</key>
+                    <summary><![CDATA[Create & manage Events (Admin)]]></summary>
+                </issue>
+            </issues>
+            <labels/>
+            <name><![CDATA[canceling while publishing new event ]]></name>
+            <objective><![CDATA[Event creation is stopped and no new event appears in the event list]]></objective>
+            <owner>712020:bce9f31c-2438-4b8b-9363-2492716c4021</owner>
+            <precondition><![CDATA[user must have an Admin role and must be on event management page<br><br>]]></precondition>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Scenario]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[sign in&nbsp;]]></description>
+                        <expectedResult><![CDATA[user is signed in&nbsp;<br data-pasted="true">Home page is displayed]]></expectedResult>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[navigating to event management page]]></description>
+                    </step>
+                    <step index="2">
+                        <customFields/>
+                        <description><![CDATA[creating new event]]></description>
+                        <expectedResult><![CDATA[new event creation form is displayed]]></expectedResult>
+                        <testData><![CDATA[Create New Event button]]></testData>
+                    </step>
+                    <step index="3">
+                        <customFields/>
+                        <description><![CDATA[entering event details]]></description>
+                        <expectedResult><![CDATA[All entered data is visible]]></expectedResult>
+                    </step>
+                    <step index="4">
+                        <customFields/>
+                        <description><![CDATA[cancel publishing]]></description>
+                        <expectedResult><![CDATA[Event creation is ​stopped<br>&nbsp;no new event appears in the event list]]></expectedResult>
+                        <testData><![CDATA[cancel button]]></testData>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+        <testCase id="288068796" key="TEAM11-T6">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Ani Kharabadze</createdBy>
+            <createdOn>2025-12-24 12:07:00 UTC</createdOn>
+            <customFields>
+                <customField name="Test Case Category" type="SINGLE_CHOICE_SELECT_LIST">
+                    <value><![CDATA[Scenario]]></value>
+                </customField>
+            </customFields>
+            <folder><![CDATA[Scenarios]]></folder>
+            <issues>
+                <issue>
+                    <key>TEAM11-3</key>
+                    <summary><![CDATA[Register for an Event]]></summary>
+                </issue>
+            </issues>
+            <labels/>
+            <name><![CDATA[registering for an event ]]></name>
+            <objective><![CDATA[user is successfully registered on chosen event]]></objective>
+            <owner>712020:bce9f31c-2438-4b8b-9363-2492716c4021</owner>
+            <precondition><![CDATA[<p data-start="360" data-end="407">Use logged in</p><p data-start="360" data-end="407">at least one events exist&nbsp;</p>]]></precondition>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Scenario Automated]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[sign in]]></description>
+                        <expectedResult><![CDATA[redirected to Home page]]></expectedResult>
+                        <testData><![CDATA[<span style="color: rgb(64, 64, 64); font-family: Inter, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;" data-pasted="true">Email: hikaru@gmail.com</span><br><span data-pasted="true">Password: Testing4</span><br><span data-pasted="true">sign in Button</span>]]></testData>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[Navigating to Browse event page]]></description>
+                        <expectedResult><![CDATA[Even list page opens]]></expectedResult>
+                        <testData><![CDATA[Browse Events Item]]></testData>
+                    </step>
+                    <step index="2">
+                        <customFields/>
+                        <description><![CDATA[Searching for desired event]]></description>
+                        <expectedResult><![CDATA[matching event appears]]></expectedResult>
+                        <testData><![CDATA[search bar: "AI in Enterprise Conference"]]></testData>
+                    </step>
+                    <step index="3">
+                        <customFields/>
+                        <description><![CDATA[Opening event details]]></description>
+                        <expectedResult><![CDATA[Even detail page opens]]></expectedResult>
+                        <testData><![CDATA[Event box]]></testData>
+                    </step>
+                    <step index="4">
+                        <customFields/>
+                        <description><![CDATA[checking available spots]]></description>
+                        <expectedResult><![CDATA[capacity is not full (100%)<br data-pasted="true">available spots &gt; 0]]></expectedResult>
+                        <testData><![CDATA[capacity marker<br>Available Spots marker]]></testData>
+                    </step>
+                    <step index="5">
+                        <customFields/>
+                        <description><![CDATA[Choosing to register]]></description>
+                        <expectedResult><![CDATA[Registration Status: Waitlist<br>Current Waitlist += 1 people<br>even is marked as registered]]></expectedResult>
+                        <testData><![CDATA[]]></testData>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+        <testCase id="288069192" key="TEAM11-T7">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Ani Kharabadze</createdBy>
+            <createdOn>2025-12-24 12:12:26 UTC</createdOn>
+            <customFields>
+                <customField name="Test Case Category" type="SINGLE_CHOICE_SELECT_LIST">
+                    <value><![CDATA[Integration Test]]></value>
+                </customField>
+            </customFields>
+            <folder><![CDATA[Unit-integration_tests]]></folder>
+            <issues>
+                <issue>
+                    <key>TEAM11-36</key>
+                    <summary><![CDATA[Authorization/Authentification]]></summary>
+                </issue>
+            </issues>
+            <labels/>
+            <name><![CDATA[registering with taken email]]></name>
+            <objective><![CDATA[rejects email that is already registered]]></objective>
+            <owner>712020:bce9f31c-2438-4b8b-9363-2492716c4021</owner>
+            <precondition><![CDATA[chosen email is taken]]></precondition>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Approved]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[entering email that already exists]]></description>
+                        <expectedResult><![CDATA[Email uniqueness is evaluated]]></expectedResult>
+                        <testData><![CDATA[Email: giorgi@gmail.com]]></testData>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[registering]]></description>
+                        <expectedResult><![CDATA[Validation fails and user is not created<br data-pasted="true">error saying email is already used pops up&nbsp;]]></expectedResult>
+                        <testData><![CDATA[registration button]]></testData>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+        <testCase id="288079892" key="TEAM11-T8">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Ani Kharabadze</createdBy>
+            <createdOn>2025-12-24 13:22:01 UTC</createdOn>
+            <customFields>
+                <customField name="Test Case Category" type="SINGLE_CHOICE_SELECT_LIST">
+                    <value><![CDATA[Scenario]]></value>
+                </customField>
+            </customFields>
+            <folder><![CDATA[Scenarios]]></folder>
+            <issues>
+                <issue>
+                    <key>TEAM11-4</key>
+                    <summary><![CDATA[Waitlist & Cancellation]]></summary>
+                </issue>
+            </issues>
+            <labels/>
+            <name><![CDATA[canceling event from notifications]]></name>
+            <objective><![CDATA[registration on given event is cancelled]]></objective>
+            <owner>712020:bce9f31c-2438-4b8b-9363-2492716c4021</owner>
+            <precondition><![CDATA[user is logged in<br>user is registered for an event]]></precondition>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Scenario]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[sign in]]></description>
+                        <expectedResult><![CDATA[redirected to Home page]]></expectedResult>
+                        <testData><![CDATA[<span style="color: rgb(64, 64, 64); font-family: Inter, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;" data-pasted="true">Email: hikaru@gmail.com</span><br><span data-pasted="true">Password: Testing4</span><br><span data-pasted="true">sign in Button</span>]]></testData>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[Navigating to notifications page]]></description>
+                        <expectedResult><![CDATA[notifications are displayed]]></expectedResult>
+                        <testData><![CDATA[notification icon]]></testData>
+                    </step>
+                    <step index="2">
+                        <customFields/>
+                        <description><![CDATA[viewing registered events]]></description>
+                        <expectedResult><![CDATA[registered events are displayed]]></expectedResult>
+                        <testData><![CDATA[registration category/filter]]></testData>
+                    </step>
+                    <step index="3">
+                        <customFields/>
+                        <description><![CDATA[opening event&nbsp;]]></description>
+                        <expectedResult><![CDATA[event detail page is displayed]]></expectedResult>
+                        <testData><![CDATA[view event detail button<strong></strong>]]></testData>
+                    </step>
+                    <step index="4">
+                        <customFields>
+                            <customField name="Description" type="MULTI_LINE_TEXT">
+<value><![CDATA[Button changes <br>registration is cancelled]]></value>
+                            </customField>
+                        </customFields>
+                        <description><![CDATA[Canceling registration]]></description>
+                        <expectedResult><![CDATA[registration is cancelled<br>cancel button changes to register]]></expectedResult>
+                        <testData><![CDATA[cancel button]]></testData>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+        <testCase id="288167992" key="TEAM11-T9">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Ani Kharabadze</createdBy>
+            <createdOn>2025-12-25 06:58:54 UTC</createdOn>
+            <customFields>
+                <customField name="Test Case Category" type="SINGLE_CHOICE_SELECT_LIST">
+                    <value><![CDATA[Integration Test]]></value>
+                </customField>
+            </customFields>
+            <folder><![CDATA[Unit-integration_tests]]></folder>
+            <issues>
+                <issue>
+                    <key>TEAM11-3</key>
+                    <summary><![CDATA[Register for an Event]]></summary>
+                </issue>
+            </issues>
+            <labels/>
+            <name><![CDATA[Capacity updates after event registering]]></name>
+            <objective><![CDATA[after new registration, the capacity is updated accordingly]]></objective>
+            <owner>712020:bce9f31c-2438-4b8b-9363-2492716c4021</owner>
+            <precondition><![CDATA[event exists&nbsp;<br>user is logged in and on event details page<br><br>]]></precondition>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Approved]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields>
+                            <customField name="Description" type="MULTI_LINE_TEXT">
+<value><![CDATA[<div></div>]]></value>
+                            </customField>
+                        </customFields>
+                        <description><![CDATA[<p data-start="544" data-end="572">view current capacity</p>]]></description>
+                        <expectedResult><![CDATA[]]></expectedResult>
+                        <testData><![CDATA[<span style="color: rgb(82, 82, 82); font-family: Inter, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 500; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;" data-pasted="true">Event Capacity marker</span>]]></testData>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[register new user]]></description>
+                        <expectedResult><![CDATA[already registered appears on button]]></expectedResult>
+                        <testData><![CDATA[registration button]]></testData>
+                    </step>
+                    <step index="2">
+                        <customFields/>
+                        <description><![CDATA[check capacity again]]></description>
+                        <expectedResult><![CDATA[capacity increased by 1]]></expectedResult>
+                        <testData><![CDATA[​event capacity marker]]></testData>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+        <testCase id="288169972" key="TEAM11-T10">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Ani Kharabadze</createdBy>
+            <createdOn>2025-12-25 08:12:29 UTC</createdOn>
+            <customFields>
+                <customField name="Test Case Category" type="SINGLE_CHOICE_SELECT_LIST">
+                    <value><![CDATA[Scenario]]></value>
+                </customField>
+            </customFields>
+            <folder><![CDATA[Scenarios]]></folder>
+            <issues>
+                <issue>
+                    <key>TEAM11-4</key>
+                    <summary><![CDATA[Waitlist & Cancellation]]></summary>
+                </issue>
+            </issues>
+            <labels/>
+            <name><![CDATA[registering for a full event - waitlisted]]></name>
+            <objective><![CDATA[user is waitlisted for chosen event]]></objective>
+            <owner>712020:bce9f31c-2438-4b8b-9363-2492716c4021</owner>
+            <precondition><![CDATA[<p data-start="360" data-end="407">Use logged in</p><p data-start="360" data-end="407">at least one events exist (with waitlist option enabled)</p>]]></precondition>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Scenario]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[sign in]]></description>
+                        <expectedResult><![CDATA[redirected to Home page]]></expectedResult>
+                        <testData><![CDATA[<span style="color: rgb(64, 64, 64); font-family: Inter, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;" data-pasted="true">Email: hikaru@gmail.com</span><br><span data-pasted="true">Password: Testing4</span><br><span data-pasted="true">sign in Button</span>]]></testData>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[Navigating to Browse event page]]></description>
+                        <expectedResult><![CDATA[Even list page opens]]></expectedResult>
+                        <testData><![CDATA[Browse Events Item]]></testData>
+                    </step>
+                    <step index="2">
+                        <customFields/>
+                        <description><![CDATA[Searching for desired event]]></description>
+                        <expectedResult><![CDATA[matching event appears]]></expectedResult>
+                        <testData><![CDATA[search bar: "AI in Enterprise Conference"]]></testData>
+                    </step>
+                    <step index="3">
+                        <customFields/>
+                        <description><![CDATA[Opening event details]]></description>
+                        <expectedResult><![CDATA[Even detail page opens]]></expectedResult>
+                        <testData><![CDATA[Event box]]></testData>
+                    </step>
+                    <step index="4">
+                        <customFields/>
+                        <description><![CDATA[checking available spots]]></description>
+                        <expectedResult><![CDATA[capacity is full<br>available spots: 0]]></expectedResult>
+                        <testData><![CDATA[capacity marker]]></testData>
+                    </step>
+                    <step index="5">
+                        <customFields/>
+                        <description><![CDATA[Choosing to enter waitlist]]></description>
+                        <expectedResult><![CDATA[Registration Status: waitlisted&nbsp;<br>event is marked as registered<br>Current Waitlist+=1 ​]]></expectedResult>
+                        <testData><![CDATA["Register for this event" button]]></testData>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+        <testCase id="288219321" key="TEAM11-T11">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Ani Kharabadze</createdBy>
+            <createdOn>2025-12-25 21:34:39 UTC</createdOn>
+            <customFields>
+                <customField name="Test Case Category" type="SINGLE_CHOICE_SELECT_LIST">
+                    <value><![CDATA[Scenario]]></value>
+                </customField>
+            </customFields>
+            <folder><![CDATA[Scenarios]]></folder>
+            <issues>
+                <issue>
+                    <key>TEAM11-29</key>
+                    <summary><![CDATA[Create & manage Events (Admin)]]></summary>
+                </issue>
+            </issues>
+            <labels/>
+            <name><![CDATA[Editing event details - Admin]]></name>
+            <objective><![CDATA[modified event is published - changes are visible and present]]></objective>
+            <owner>712020:bce9f31c-2438-4b8b-9363-2492716c4021</owner>
+            <precondition><![CDATA[The user must be logged in as Admin<br>Event exists]]></precondition>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Scenario]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[sign in as admin]]></description>
+                        <expectedResult><![CDATA[user is signed in&nbsp;<br data-pasted="true">Home page is displayed]]></expectedResult>
+                        <testData><![CDATA[<span style="color: rgb(64, 64, 64); font-family: Inter, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;" data-pasted="true">Email: <span data-teams="true" data-pasted="true"><a href="mailto:admin@company.com" rel="noreferrer noopener" target="_blank" title="mailto:admin@company.com">admin@company.com</a></span></span><br><span data-pasted="true">Password: mimimimi</span><br><span data-pasted="true">sign in Button</span>]]></testData>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[Navigating to Manage event page]]></description>
+                        <expectedResult><![CDATA[management page opens]]></expectedResult>
+                        <testData><![CDATA[Event Management Item]]></testData>
+                    </step>
+                    <step index="2">
+                        <customFields/>
+                        <description><![CDATA[<span style="color: rgb(9, 30, 66); font-family: sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: -0.07px; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;" data-pasted="true">choosing editing option</span>]]></description>
+                        <expectedResult><![CDATA[event creation/edit form is displayed]]></expectedResult>
+                        <testData><![CDATA[edit icon]]></testData>
+                    </step>
+                    <step index="3">
+                        <customFields/>
+                        <description><![CDATA[​<span style="color: rgb(9, 30, 66); font-family: sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: -0.07px; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;" data-pasted="true">changing details</span>]]></description>
+                        <expectedResult><![CDATA[​new value is visible&nbsp;]]></expectedResult>
+                        <testData><![CDATA[Location: Kutaisi]]></testData>
+                    </step>
+                    <step index="4">
+                        <customFields/>
+                        <description><![CDATA[<span style="color: rgb(9, 30, 66); font-family: sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: -0.07px; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;" data-pasted="true">publishing event</span>]]></description>
+                        <expectedResult><![CDATA[modified event is published - changes are visible and present]]></expectedResult>
+                        <testData><![CDATA[publish event button]]></testData>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+        <testCase id="288220301" key="TEAM11-T12">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Ani Kharabadze</createdBy>
+            <createdOn>2025-12-25 21:49:16 UTC</createdOn>
+            <customFields>
+                <customField name="Test Case Category" type="SINGLE_CHOICE_SELECT_LIST">
+                    <value><![CDATA[Scenario]]></value>
+                </customField>
+            </customFields>
+            <folder><![CDATA[Scenarios]]></folder>
+            <issues>
+                <issue>
+                    <key>TEAM11-29</key>
+                    <summary><![CDATA[Create & manage Events (Admin)]]></summary>
+                </issue>
+            </issues>
+            <labels/>
+            <name><![CDATA[canceling while editing event details - Admin ]]></name>
+            <objective><![CDATA[modifications, changes are not published. event remains as it was]]></objective>
+            <owner>712020:bce9f31c-2438-4b8b-9363-2492716c4021</owner>
+            <precondition><![CDATA[The user must be logged in as Admin<br>Event exists]]></precondition>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Scenario]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[sign in as admin]]></description>
+                        <expectedResult><![CDATA[user is signed in&nbsp;<br data-pasted="true">Home page is displayed]]></expectedResult>
+                        <testData><![CDATA[<span style="color: rgb(64, 64, 64); font-family: Inter, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;" data-pasted="true">Email: <span data-teams="true" data-pasted="true"><a href="mailto:admin@company.com" rel="noreferrer noopener" target="_blank" title="mailto:admin@company.com">admin@company.com</a></span></span><br><span data-pasted="true">Password: mimimimi</span><br><span data-pasted="true">sign in Button</span>]]></testData>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[Navigating to Manage event page]]></description>
+                        <expectedResult><![CDATA[management page opens]]></expectedResult>
+                        <testData><![CDATA[Event Management Item]]></testData>
+                    </step>
+                    <step index="2">
+                        <customFields/>
+                        <description><![CDATA[<span style="color: rgb(9, 30, 66); font-family: sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: -0.07px; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;" data-pasted="true">choosing editing option</span>]]></description>
+                        <expectedResult><![CDATA[event creation/edit form is displayed]]></expectedResult>
+                        <testData><![CDATA[edit icon]]></testData>
+                    </step>
+                    <step index="3">
+                        <customFields/>
+                        <description><![CDATA[​<span style="color: rgb(9, 30, 66); font-family: sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: -0.07px; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;" data-pasted="true">changing details</span>]]></description>
+                        <expectedResult><![CDATA[​new value is visible&nbsp;]]></expectedResult>
+                        <testData><![CDATA[Location: Kutaisi]]></testData>
+                    </step>
+                    <step index="4">
+                        <customFields/>
+                        <description><![CDATA[Canceling changes]]></description>
+                        <expectedResult><![CDATA[changes are not saved<br>modified event is not published&nbsp;]]></expectedResult>
+                        <testData><![CDATA[cancel button]]></testData>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+        <testCase id="288220359" key="TEAM11-T13">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Ani Kharabadze</createdBy>
+            <createdOn>2025-12-25 21:53:34 UTC</createdOn>
+            <customFields>
+                <customField name="Test Case Category" type="SINGLE_CHOICE_SELECT_LIST">
+                    <value><![CDATA[Scenario]]></value>
+                </customField>
+            </customFields>
+            <folder><![CDATA[Scenarios]]></folder>
+            <issues>
+                <issue>
+                    <key>TEAM11-29</key>
+                    <summary><![CDATA[Create & manage Events (Admin)]]></summary>
+                </issue>
+                <issue>
+                    <key>TEAM11-31</key>
+                    <summary><![CDATA[Export & Analytics (MVP)]]></summary>
+                </issue>
+                <issue>
+                    <key>TEAM11-90</key>
+                    <summary><![CDATA[Create Event By Admin]]></summary>
+                </issue>
+            </issues>
+            <labels/>
+            <name><![CDATA[registration exports - Admin]]></name>
+            <objective><![CDATA[Admin can export registrations and view them in the downloaded CSV]]></objective>
+            <owner>712020:bce9f31c-2438-4b8b-9363-2492716c4021</owner>
+            <precondition><![CDATA[user must have an Admin role&nbsp;<br>there must be at least one registration<br><br>]]></precondition>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Scenario]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[sign in&nbsp;]]></description>
+                        <expectedResult><![CDATA[user is signed in&nbsp;<br data-pasted="true">Home page is displayed]]></expectedResult>
+                        <testData><![CDATA[<span style="color: rgb(64, 64, 64); font-family: Inter, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;" data-pasted="true">Email: <span data-teams="true" data-pasted="true"><a href="mailto:admin@company.com" rel="noreferrer noopener" target="_blank" title="mailto:admin@company.com">admin@company.com</a></span></span><br><span data-pasted="true">Password: mimimimi</span><br><span data-pasted="true">sign in Button</span>]]></testData>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[<span style="color: rgb(9, 30, 66); font-family: sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: -0.07px; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;" data-pasted="true">Navigating to analytics page</span>]]></description>
+                        <expectedResult><![CDATA[analytics page opens]]></expectedResult>
+                        <testData><![CDATA[Analytics Item]]></testData>
+                    </step>
+                    <step index="2">
+                        <customFields/>
+                        <description><![CDATA[<span style="color: rgb(9, 30, 66); font-family: sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: -0.07px; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;" data-pasted="true">View Top Events</span>]]></description>
+                        <expectedResult><![CDATA[new event creation form is displayed]]></expectedResult>
+                        <testData><![CDATA[Top Events analytics ​category]]></testData>
+                    </step>
+                    <step index="3">
+                        <customFields/>
+                        <description><![CDATA[<span style="color: rgb(9, 30, 66); font-family: sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: -0.07px; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;" data-pasted="true">Navigating to Manage event page</span>]]></description>
+                        <expectedResult><![CDATA[Event Management ​page opens]]></expectedResult>
+                        <testData><![CDATA[Event Management Item]]></testData>
+                    </step>
+                    <step index="4">
+                        <customFields/>
+                        <description><![CDATA[<span style="color: rgb(9, 30, 66); font-family: sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: -0.07px; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;" data-pasted="true">export List</span>]]></description>
+                        <expectedResult><![CDATA[Event is created and appears in the event list]]></expectedResult>
+                        <testData><![CDATA[publish event button]]></testData>
+                    </step>
+                    <step index="5">
+                        <customFields/>
+                        <description><![CDATA[viewing downloaded Csv]]></description>
+                        <expectedResult><![CDATA[The CSV contains event data such as names, dates, and other relevant information]]></expectedResult>
+                        <testData><![CDATA[export icon ​]]></testData>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+        <testCase id="288220364" key="TEAM11-T14">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Ani Kharabadze</createdBy>
+            <createdOn>2025-12-25 22:00:08 UTC</createdOn>
+            <customFields>
+                <customField name="Test Case Category" type="SINGLE_CHOICE_SELECT_LIST">
+                    <value><![CDATA[Scenario]]></value>
+                </customField>
+            </customFields>
+            <folder><![CDATA[Scenarios]]></folder>
+            <issues>
+                <issue>
+                    <key>TEAM11-29</key>
+                    <summary><![CDATA[Create & manage Events (Admin)]]></summary>
+                </issue>
+                <issue>
+                    <key>TEAM11-90</key>
+                    <summary><![CDATA[Create Event By Admin]]></summary>
+                </issue>
+            </issues>
+            <labels/>
+            <name><![CDATA[Deleting multiple events - Admin]]></name>
+            <objective><![CDATA[events marked by admin are deleted and no longer present in event list]]></objective>
+            <owner>712020:bce9f31c-2438-4b8b-9363-2492716c4021</owner>
+            <precondition><![CDATA[user must have an Admin role and must be on event management page<br><br>]]></precondition>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Scenario]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[sign in&nbsp;]]></description>
+                        <expectedResult><![CDATA[user is signed in&nbsp;<br data-pasted="true">Home page is displayed]]></expectedResult>
+                        <testData><![CDATA[<span style="color: rgb(64, 64, 64); font-family: Inter, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;" data-pasted="true">Email: <span data-teams="true" data-pasted="true"><a href="mailto:admin@company.com" rel="noreferrer noopener" target="_blank" title="mailto:admin@company.com">admin@company.com</a></span></span><br><span data-pasted="true">Password: mimimimi</span><br><span data-pasted="true">sign in Button</span>]]></testData>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[navigating to event management page]]></description>
+                        <expectedResult><![CDATA[management page opens]]></expectedResult>
+                        <testData><![CDATA[Event Management Item]]></testData>
+                    </step>
+                    <step index="2">
+                        <customFields/>
+                        <description><![CDATA[<span style="color: rgb(9, 30, 66); font-family: sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: -0.07px; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;" data-pasted="true">mark events to delete</span>]]></description>
+                        <expectedResult><![CDATA[checkbox gets filled]]></expectedResult>
+                        <testData><![CDATA[event checkbox ]]></testData>
+                    </step>
+                    <step index="3">
+                        <customFields/>
+                        <description><![CDATA[<span style="color: rgb(9, 30, 66); font-family: sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: -0.07px; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;" data-pasted="true">choosing to delete selected events</span>]]></description>
+                        <expectedResult><![CDATA[no warning is shown]]></expectedResult>
+                        <testData><![CDATA[Delete selected option]]></testData>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+        <testCase id="288220425" key="TEAM11-T15">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Ani Kharabadze</createdBy>
+            <createdOn>2025-12-25 22:03:31 UTC</createdOn>
+            <customFields>
+                <customField name="Test Case Category" type="SINGLE_CHOICE_SELECT_LIST">
+                    <value><![CDATA[Scenario]]></value>
+                </customField>
+            </customFields>
+            <folder><![CDATA[Scenarios]]></folder>
+            <issues>
+                <issue>
+                    <key>TEAM11-29</key>
+                    <summary><![CDATA[Create & manage Events (Admin)]]></summary>
+                </issue>
+                <issue>
+                    <key>TEAM11-90</key>
+                    <summary><![CDATA[Create Event By Admin]]></summary>
+                </issue>
+            </issues>
+            <labels/>
+            <name><![CDATA[clearing selection of multiple events - Admin]]></name>
+            <objective><![CDATA[events marked by admin (to be deleted) are reverted back to unselected and present in event list]]></objective>
+            <owner>712020:bce9f31c-2438-4b8b-9363-2492716c4021</owner>
+            <precondition><![CDATA[user must have an Admin role and must be on event management page<br><br>]]></precondition>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Scenario]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[sign in&nbsp;]]></description>
+                        <expectedResult><![CDATA[user is signed in&nbsp;<br data-pasted="true">Home page is displayed]]></expectedResult>
+                        <testData><![CDATA[<span style="color: rgb(64, 64, 64); font-family: Inter, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;" data-pasted="true">Email: <span data-teams="true" data-pasted="true"><a href="mailto:admin@company.com" rel="noreferrer noopener" target="_blank" title="mailto:admin@company.com">admin@company.com</a></span></span><br><span data-pasted="true">Password: mimimimi</span><br><span data-pasted="true">sign in Button</span>]]></testData>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[navigating to event management page]]></description>
+                        <expectedResult><![CDATA[management page opens]]></expectedResult>
+                        <testData><![CDATA[Event Management Item]]></testData>
+                    </step>
+                    <step index="2">
+                        <customFields/>
+                        <description><![CDATA[<span style="color: rgb(9, 30, 66); font-family: sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: -0.07px; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;" data-pasted="true">mark events to delete</span>]]></description>
+                        <expectedResult><![CDATA[checkbox gets filled]]></expectedResult>
+                        <testData><![CDATA[event checkbox ]]></testData>
+                    </step>
+                    <step index="3">
+                        <customFields/>
+                        <description><![CDATA[<span style="color: rgb(9, 30, 66); font-family: sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: -0.07px; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;" data-pasted="true">choosing clear selection</span>]]></description>
+                        <expectedResult><![CDATA[events unselected and still present in event list]]></expectedResult>
+                        <testData><![CDATA[clear selection option]]></testData>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+        <testCase id="288287508" key="TEAM11-T16">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Ani Kharabadze</createdBy>
+            <createdOn>2025-12-27 07:50:02 UTC</createdOn>
+            <customFields>
+                <customField name="Test Case Category" type="SINGLE_CHOICE_SELECT_LIST">
+                    <value><![CDATA[Scenario]]></value>
+                </customField>
+            </customFields>
+            <folder><![CDATA[Scenarios]]></folder>
+            <issues/>
+            <labels/>
+            <name><![CDATA[Getting notification after Event Registration]]></name>
+            <objective><![CDATA[confirmation notification is shown with correct content and with correct time&nbsp;]]></objective>
+            <owner>712020:bce9f31c-2438-4b8b-9363-2492716c4021</owner>
+            <precondition><![CDATA[User is logged in<br>user is on event detail page]]></precondition>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Scenario]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[Navigating to Browse event page]]></description>
+                        <expectedResult><![CDATA[Even list page opens]]></expectedResult>
+                        <testData><![CDATA[Browse Events Item]]></testData>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[viewing details of chosen event&nbsp;]]></description>
+                        <expectedResult><![CDATA[Even detail page opens]]></expectedResult>
+                        <testData><![CDATA[Event box]]></testData>
+                    </step>
+                    <step index="2">
+                        <customFields/>
+                        <description><![CDATA[Choosing to register]]></description>
+                        <expectedResult><![CDATA[Registration Status: Waitlist<br data-pasted="true">Current Waitlist += 1 people<br>even is marked as registered]]></expectedResult>
+                        <testData><![CDATA["Register for this event" button]]></testData>
+                    </step>
+                    <step index="3">
+                        <customFields/>
+                        <description><![CDATA[Waiting for Confirmation&nbsp;]]></description>
+                        <expectedResult><![CDATA[A notification should appear confirming successful registration]]></expectedResult>
+                    </step>
+                    <step index="4">
+                        <customFields/>
+                        <description><![CDATA[going to notifications section]]></description>
+                        <expectedResult><![CDATA[notification page opens]]></expectedResult>
+                        <testData><![CDATA[notification icon]]></testData>
+                    </step>
+                    <step index="5">
+                        <customFields/>
+                        <description><![CDATA[Viewing most recent notification]]></description>
+                        <expectedResult><![CDATA[confirmation notification is shown with correct content and with correct time&nbsp;]]></expectedResult>
+                        <testData><![CDATA[Today's activity section&nbsp;]]></testData>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+        <testCase id="288287551" key="TEAM11-T17">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Ani Kharabadze</createdBy>
+            <createdOn>2025-12-27 08:16:43 UTC</createdOn>
+            <customFields>
+                <customField name="Test Case Category" type="SINGLE_CHOICE_SELECT_LIST">
+                    <value><![CDATA[Scenario]]></value>
+                </customField>
+            </customFields>
+            <folder><![CDATA[Scenarios]]></folder>
+            <issues/>
+            <labels/>
+            <name><![CDATA[Promotion from waitlist on event cancellation]]></name>
+            <objective><![CDATA[a user on the waitlist is correctly promoted to a "registered" when someone cancels their registration]]></objective>
+            <owner>712020:bce9f31c-2438-4b8b-9363-2492716c4021</owner>
+            <precondition><![CDATA[<p data-start="535" data-end="619">user is logged in</p><p data-start="535" data-end="619">there is a full event with waitlist option enabled</p>]]></precondition>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Scenario]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[log in&nbsp;]]></description>
+                        <expectedResult><![CDATA[user is signed in&nbsp;<br data-pasted="true">Home page is displayed]]></expectedResult>
+                        <testData><![CDATA[<span style="color: rgb(64, 64, 64); font-family: Inter, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;" data-pasted="true">Email: VV@gmail.com</span><br><span data-pasted="true">Password: Vvv12345</span><br><span data-pasted="true">sign in Button</span>]]></testData>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[Navigating to event page]]></description>
+                        <expectedResult><![CDATA[cooking class details open]]></expectedResult>
+                        <testData><![CDATA[event: Cooking Class<br>event details button]]></testData>
+                    </step>
+                    <step index="2">
+                        <customFields/>
+                        <description><![CDATA[User Registers for full Event]]></description>
+                        <expectedResult><![CDATA[event is marked as registered<br>waitlist count increases by 1&nbsp;]]></expectedResult>
+                        <testData><![CDATA[register button]]></testData>
+                    </step>
+                    <step index="3">
+                        <customFields/>
+                        <description><![CDATA[another user Cancels Registration]]></description>
+                        <expectedResult><![CDATA[​available spots +=1]]></expectedResult>
+                        <testData><![CDATA[available spot marker<br>capacity fullness bar]]></testData>
+                    </step>
+                    <step index="4">
+                        <customFields>
+                            <customField name="Description" type="MULTI_LINE_TEXT">
+<value><![CDATA[promotion from waitlist to registered status]]></value>
+                            </customField>
+                        </customFields>
+                        <description><![CDATA[registering status]]></description>
+                        <expectedResult><![CDATA[<span style="box-sizing: border-box; font-family: Inter, sans-serif; margin: 0px; padding: 0px; border: 0px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alternates: inherit; font-variant-position: inherit; font-variant-emoji: inherit; font-weight: 400; font-stretch: inherit; font-size: 14px; line-height: inherit; font-optical-sizing: inherit; font-size-adjust: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; font-language-override: inherit; vertical-align: baseline; color: rgb(64, 64, 64); letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;" data-pasted="true">Current Waitlist -= 1 p</span><span style="box-sizing: border-box; font-family: Inter, sans-serif; margin: 0px; padding: 0px; border: 0px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alternates: inherit; font-variant-position: inherit; font-variant-emoji: inherit; font-weight: 400; font-stretch: inherit; font-size: 14px; line-height: inherit; font-optical-sizing: inherit; font-size-adjust: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; font-language-override: inherit; vertical-align: baseline; color: rgb(23, 23, 23); letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">eople</span><br><span style="box-sizing: border-box; font-family: Inter, sans-serif; margin: 0px; padding: 0px; border: 0px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alternates: inherit; font-variant-position: inherit; font-variant-emoji: inherit; font-weight: 400; font-stretch: inherit; font-size: 14px; line-height: inherit; font-optical-sizing: inherit; font-size-adjust: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; font-language-override: inherit; vertical-align: baseline; color: rgb(23, 23, 23); letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">notification:&nbsp;</span><span style="box-sizing: border-box; font-family: Inter, sans-serif; margin: 0px; padding: 0px; border: 0px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alternates: inherit; font-variant-position: inherit; font-variant-emoji: inherit; font-weight: 400; font-stretch: inherit; font-size: 14px; line-height: inherit; font-optical-sizing: inherit; font-size-adjust: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; font-language-override: inherit; vertical-align: baseline; color: rgb(23, 23, 23); letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">"Spot Available<br>Great news! You've been moved from waitlist to confirmed for Cooking Class"</span>]]></expectedResult>
+                        <testData><![CDATA[registration status ​box<br>waitlist bar<br>​notifications section<br><br>]]></testData>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+    </testCases>
+</project>
